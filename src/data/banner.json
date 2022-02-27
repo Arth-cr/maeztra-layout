@@ -1,0 +1,37 @@
+[
+  {
+    "image": "/banner.png",
+    "imageMobile": "/banner-mobile.png",
+    "title": "Promoções de Outono",
+    "text": "Confiras os melhores looks para combinar com você nesse Outono",
+    "buttonColor": "#FAA500"
+  },
+  {
+    "image": "/banner.png",
+    "imageMobile": "/banner-mobile.png",
+    "title": "Promoções de Verão",
+    "text": "Confiras os melhores looks para combinar com você nesse Verão",
+    "buttonColor": "#FAA500"
+  },
+  {
+    "image": "/banner.png",
+    "imageMobile": "/banner-mobile.png",
+    "title": "Promoções de Inverno",
+    "text": "Confiras os melhores looks para combinar com você nesse Inverno",
+    "buttonColor": "#FAA500"
+  },
+  {
+    "image": "/banner.png",
+    "imageMobile": "/banner-mobile.png",
+    "title": "Promoções de Primavera",
+    "text": "Confiras os melhores looks para combinar com você nesse Primavera",
+    "buttonColor": "#FAA500"
+  },
+  {
+    "image": "/banner.png",
+    "imageMobile": "/banner-mobile.png",
+    "title": "Promoções de Carnaval",
+    "text": "Confiras os melhores looks para combinar com você nesse Carnaval",
+    "buttonColor": "#FAA500"
+  }
+]
