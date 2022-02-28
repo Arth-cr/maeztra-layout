@@ -9,10 +9,13 @@
     "test": "jest --watchAll"
   },
   "dependencies": {
+    "@types/slick-carousel": "^1.6.37",
+    "file-loader": "^6.2.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.2.0",
-    "react-slick": "^0.28.1"
+    "react-slick": "^0.28.1",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.10",

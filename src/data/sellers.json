@@ -1,0 +1,27 @@
+[
+  {
+    "icon": "/world.svg",
+    "title": "Produtos importados",
+    "text": "Produto de Alta Qualidade"
+  },
+  {
+    "icon": "/estoque.svg",
+    "title": "Estoque no Brazil",
+    "text": "Produtos mais perto de você!"
+  },
+  {
+    "icon": "/trocas.svg",
+    "title": "Trocas Garantidas",
+    "text": "Trocas em até 48 horas, vejas as regras"
+  },
+  {
+    "icon": "/tag.svg",
+    "title": "Ganhe 5% off",
+    "text": "Pagando à vista no Cartão"
+  },
+  {
+    "icon": "/frete.svg",
+    "title": "Frete Grátis",
+    "text": "Em compras acima de R$ 499,00"
+  }
+]

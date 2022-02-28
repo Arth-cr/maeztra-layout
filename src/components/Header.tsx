@@ -1,6 +1,38 @@
 import "../styles/header.scss";
 
 export function Header() {
+  const isMobile = window.innerWidth <= 1024;
+
+  if (isMobile) {
+    return (
+      <header className="container_header">
+        <section className="topbar">
+          <h2>Acompanhe as melhores promoções disponíveis aqui na Maeztra.</h2>
+        </section>
+        <section className="icons-headerMobile">
+          <div className="logo-menu">
+            <div>
+              <img src="/icon-menu.png" alt="menu" />
+            </div>
+
+            <div>
+              <img src="/logo.png" alt="Maeztra" />
+            </div>
+          </div>
+
+          <div className="bag-search">
+            <div>
+              <img src="/icon-busca.png" alt="" />
+            </div>
+            <div>
+              <img src="/icon-shoppingbag-mobile.png" alt="" />
+            </div>
+          </div>
+        </section>
+      </header>
+    );
+  }
+
   return (
     <header className="container_header">
       <section className="topbar">
