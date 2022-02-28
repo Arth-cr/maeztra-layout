@@ -1,5 +1,5 @@
 import "../../styles/home.scss";
-import { BannerHome } from "./BannerHome/bannerHome";
+import { BannerHome } from "./BannerHome/BannerHome";
 import { InfoCard } from "./InfoCard/InfoCard";
 import { Parceiros } from "./Parceiros/Parceiros";
 import { Sellers } from "./SellersContainer/Sellers";
