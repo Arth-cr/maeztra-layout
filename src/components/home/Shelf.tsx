@@ -1,6 +1,6 @@
-import products from "../../../data/products.json";
+import products from "../../data/products.json";
 import Slider from "react-slick";
-import "../../../styles/home.scss";
+import "../../styles/home.scss";
 import { useState } from "react";
 
 export function Shelfs() {

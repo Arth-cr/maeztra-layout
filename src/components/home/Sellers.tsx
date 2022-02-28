@@ -1,9 +1,11 @@
-import parceiros from "../../../data/parceiros.json";
 import Slider from "react-slick";
-import "../../../styles/home.scss";
+import sellers from "../../data/sellers.json";
+import "../../styles/home.scss";
 
-export function Parceiros() {
+export function Sellers() {
   var settings = {
+    arrows: false,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 5,
@@ -32,14 +34,18 @@ export function Parceiros() {
 
   return (
     <>
-      <div className="parceiros_container">
-        <h2>Marcas Parceiras</h2>
+      <div className="sellers_container">
+        <h2>Por que comprar na Maeztra?</h2>
         <Slider {...settings}>
-          {parceiros.map((item, i) => {
+          {sellers.map((item, i) => {
             return (
               <div key={i}>
-                <div className="parceiros_singleContainer">
-                  <img src={item.image} alt={item.text} />
+                <div className="sellers_singleContainer">
+                  <img src={item.icon} alt={item.text} />
+                  <div className="sellers">
+                    <h2>{item.title}</h2>
+                    <p>{item.text}</p>
+                  </div>
                 </div>
               </div>
             );

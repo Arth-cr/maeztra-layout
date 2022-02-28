@@ -1,9 +1,9 @@
 import "../../styles/home.scss";
-import { BannerHome } from "./BannerHome/BannerHome";
-import { InfoCard } from "./InfoCard/InfoCard";
-import { Parceiros } from "./Parceiros/Parceiros";
-import { Sellers } from "./SellersContainer/Sellers";
-import { Shelfs } from "./Shelf/Shelf";
+import { BannerHome } from "./BannerHome";
+import { InfoCard } from "./InfoCard";
+import { Parceiros } from "./Parceiros";
+import { Sellers } from "./Sellers";
+import { Shelfs } from "./Shelf";
 
 export function Home() {
   return (
