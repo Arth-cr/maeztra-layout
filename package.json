@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "homepage": "https://arth-cr.github.io/maeztra-layout/",
   "scripts": {
     "dev": "webpack serve",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "cross-env NODE_ENV=production webpack",
     "test": "jest --watchAll"
   },
@@ -32,7 +35,7 @@
     "babel-preset-react-app": "^10.0.0",
     "cross-env": "^7.0.3",
     "css-loader": "^5.0.1",
-    "gh-pages": "^3.2.3",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^4.5.1",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.6.3",
