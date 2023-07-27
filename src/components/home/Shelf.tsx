@@ -1,7 +1,7 @@
-import products from "../../data/products.json";
-import Slider from "react-slick";
-import "../../styles/home.scss";
-import { useState } from "react";
+import products from '../../data/products.json'
+import Slider from 'react-slick'
+import '../../styles/home.scss'
+import { useState } from 'react'
 
 export function Shelfs() {
   var settings = {
@@ -9,9 +9,12 @@ export function Shelfs() {
     dots: false,
 
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 5,
     slidesToScroll: 1,
+
+    autoplay: true,
+    autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 1025,
@@ -27,9 +30,9 @@ export function Shelfs() {
         settings: {
           arrows: false,
 
-          className: "center",
+          className: 'center',
           centerMode: true,
-          centerPadding: "20px",
+          centerPadding: '20px',
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
@@ -37,53 +40,53 @@ export function Shelfs() {
         },
       },
     ],
-  };
+  }
 
   function getFormattedPrice(price: string | number): string {
     if (!price) {
-      return "0";
+      return '0'
     }
 
-    price = price || 0;
-    price = price.toLocaleString("pt-BR", {
+    price = price || 0
+    price = price.toLocaleString('pt-BR', {
       minimumFractionDigits: 2,
       maximumFractionDigits: 2,
-    });
+    })
 
-    return `R$ ${price}`;
+    return `R$ ${price}`
   }
 
   return (
-    <div className="shelf">
+    <div className='shelf'>
       <h2>As Mais Pedidas</h2>
 
       <Slider {...settings}>
         {products.map((item, i) => {
-          const [activeSku, setActiveSku] = useState(1);
+          const [activeSku, setActiveSku] = useState(1)
 
           return (
             <div key={i}>
-              <div className="shelf_productContainer">
+              <div className='shelf_productContainer'>
                 <img src={item.image} alt={item.name} />
 
-                <div className="shelf_product">
-                  <div className="shelf_productSku">
+                <div className='shelf_product'>
+                  <div className='shelf_productSku'>
                     {item.colors.map((color, i) => {
                       return (
                         <div
                           key={i}
                           style={{
                             backgroundColor: `${color.color}`,
-                            width: "27px",
-                            height: "27px",
-                            display: "block",
+                            width: '27px',
+                            height: '27px',
+                            display: 'block',
                           }}
-                          className={activeSku === color.id ? "active" : ""}
+                          className={activeSku === color.id ? 'active' : ''}
                           onClick={() => setActiveSku(color.id)}
                         >
-                          {" "}
+                          {' '}
                         </div>
-                      );
+                      )
                     })}
                   </div>
 
@@ -93,13 +96,13 @@ export function Shelfs() {
 
                   <p>{item.description}</p>
 
-                  <button type="button">Adicionar</button>
+                  <button type='button'>Adicionar</button>
                 </div>
               </div>
             </div>
-          );
+          )
         })}
       </Slider>
     </div>
-  );
+  )
 }
